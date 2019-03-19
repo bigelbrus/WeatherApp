@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherFragment">
+
+    <TableLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textSize="40sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wind"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/windNumber"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pressure"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/pressuNumber"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hymidity"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/hyNumber"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+
+
+</FrameLayout>

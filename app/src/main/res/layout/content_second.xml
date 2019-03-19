@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSecond"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SecondActivity"
+    tools:showIn="@layout/activity_second">
+
+    <TextView
+        android:id="@+id/textTown"
+        style="@style/Base.V7.Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextViewHymidity"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:padding="5dp"
+        android:text="@string/hymidity"
+        app:layout_constraintStart_toStartOf="@+id/textTown"
+        app:layout_constraintTop_toBottomOf="@+id/textTown" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextViewWind"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/wind"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextViewHymidity"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextViewHymidity" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextViewPressure"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/pressure"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextViewWind"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextViewWind" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/buttonBackText"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextViewPressure"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextViewPressure" />
+
+    <EditText
+        android:id="@+id/textToFirstActivity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterText"
+        app:layout_constraintStart_toStartOf="@+id/buttonBack"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
